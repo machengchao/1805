@@ -28,20 +28,21 @@ def add():
 	a['name']=name
 	a['job']=job
 	a['age']=age
-	a['phone']=phone
+	a['pZZhone']=phone
 	list.append(a)
 def find():
 	name = input("输入姓名")#输入要查找的人
 	flag = False#假设没有找到那个人
 	for i in list:
 		if name== i['name']:
+			print('已下是隋静的信息')
 			print('姓名%s\n职位:%s\n年龄:%s\n手机号:%s'%(i['name'],i['job'],i['age'],i['phone']))
 				
 			flag = True#找到了
 			break
 	if flag == False:	
 		print('查无此人')
-
+		
 def Modify():
 	#要修改之前先要找到要修改的名字
 	name = input('请输入您要修改的名字')
